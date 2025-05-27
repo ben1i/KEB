@@ -1,2 +1,101 @@
 @import 'utils/variables';
 @import 'components/type';
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+
+
+body {
+    background-color: #000000;
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+.hidden {
+    display: none !important;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    padding: 31px;
+
+    position: fixed;
+
+    background-color: black;
+
+    nav {
+        width: 100%;
+        
+        ul {
+            display: grid;
+            grid-template-rows: repeat(5, 1fr);
+            row-gap: 62px;
+            align-items: center;
+
+            width: 100%;
+            padding: 0;
+
+            li {
+                list-style: none;
+                width: 100%;
+                height: 100px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: transparent;
+
+                font-family: "Black Ops One", system-ui;
+
+                a {
+                    width: 100%;
+
+                    color: white;
+                    text-decoration: none;
+
+                    text-align: center;
+
+                    font-size: $step-2;
+                }
+
+                &:hover, &.active { //ChatGPT (pour le &.active)
+                    background-color: white !important;
+
+                    a {
+                        color: black !important;
+                    }
+                }
+
+                &:last-child {
+                    background-color: #EED61F;
+
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    
+    .intro {
+        width: 100%;
+        height: 100%;
+
+        padding: 31px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            margin: 0;
+        }
+    }
+}

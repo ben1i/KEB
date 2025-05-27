@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "gsap": "^3.13.0",
+    "modern-normalize": "^3.0.1",
     "powerglitch": "^2.4.0"
   }
 }
