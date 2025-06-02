@@ -10,6 +10,8 @@ body {
     min-height: 100vh;
 
     font-family: "Antonio", sans-serif;
+
+    overflow-x: hidden;
 }
 
 .hidden {
@@ -207,9 +209,26 @@ main {
 
     .theydont__header {
         margin-bottom: 31px;
+        z-index: 10;
+    }
+
+    img {
+        width: 100%;
     }
 
     .subsubtitle {
         font-size: $step-2;
+    }
+
+    .theydont__div {
+        margin-bottom: 62px;
+
+        h4 {
+            font-size: $step-2;
+            text-align: center;
+            margin-bottom: 31px;
+
+            margin-top: 0;
+        }
     }
 }
