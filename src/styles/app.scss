@@ -156,8 +156,41 @@ main {
         }
     }
 
-   .keb__section {
-        min-height: 100vh;
+    .keb {
+        &__section {
+            min-height: 100vh;
+        }
+
+        &__form {
+            padding: 0px 31px 31px 31px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 31px;
+
+            button {
+                height: 75px;
+
+                background-color: #EED61F;
+                color: black;
+                font-size: $step-2;
+            }
+        }
+    }
+
+    .formInput {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+
+        label {
+            font-size: $step-1;
+        }
+
+        input, select {
+            height: 50px;
+        }
     }
 
     .sectionHeader {
@@ -209,7 +242,6 @@ main {
 
     .theydont__header {
         margin-bottom: 31px;
-        z-index: 10;
     }
 
     img {
@@ -231,4 +263,374 @@ main {
             margin-top: 0;
         }
     }
+
+    .rejected, .received {
+        padding: 0px 31px 31px 31px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 31px;
+
+        font-size: $step-2;
+        text-align: center;
+    }
 }
+
+
+@media (min-width: 1200px) {
+
+    header {
+        height: fit-content;
+
+        nav {
+            ul {
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: none;
+                row-gap: 0;
+                column-gap: 31px;
+                height: fit-content;
+                margin: 0;
+
+                li {
+                    height: 75px;
+                }
+            }
+        }
+    }
+
+    main {
+
+        .transition {
+            width: 100%;
+            height: 100%;
+
+            background-color: black;
+            background-image: url(../assets/images/keb-logo.svg);
+            background-repeat: no-repeat;
+            background-position-y: center;
+
+            position: absolute;
+        }
+
+        .burger {
+            display: none;
+        }
+        
+        .intro {
+            padding: 75px 31px 31px 31px;
+        }
+
+        .joinus {
+            padding-top: 137px;
+        }
+
+        .keb {
+            &__form {
+
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(3, auto);
+                column-gap: 31px;
+                row-gap: 62px;
+            }
+
+            &__section {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                column-gap: 31px;
+
+                min-height: fit-content;
+            }
+        }
+
+        .form {
+            &__name {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            &__surname {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            &__email {
+                grid-column: 3 / 6;
+                grid-row: 1 / 2;
+            }
+
+            &__birthday {
+                grid-column: 1 / 3;
+                grid-row: 2 / 3;
+            }
+
+            &__gender {
+                grid-column: 3 / 4;
+                grid-row: 2 / 3;
+            }
+
+            &__role {
+                grid-column: 4 / 6;
+                grid-row: 2 / 3;
+            }
+
+            &__submit {
+                grid-column: 3 / 4;
+                grid-row: 3 / 4;
+            }
+        }
+
+        .sectionHeader {
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 0;
+
+            grid-column: 1 / 3;
+
+            h3 {
+                margin: 0;
+            }
+
+            .keb__images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, auto);
+
+                column-gap: 15px;
+                row-gap: 15px;
+
+                &--1 {
+                    grid-column: 1 / 3;
+                    grid-row: 1 / 2;
+
+                    width: 100%;
+                    max-height: 362px;
+                    object-fit: contain;
+
+                    justify-self: center;
+                }
+            }
+        }
+
+        .subtitle {
+            margin-bottom: 62px;
+        }
+
+        .explaination {
+            padding: 0px 31px 0px 0px;
+
+            grid-column: 3 / 6;
+
+            align-self: center;
+
+            span {
+                width: 100%;
+                display: block;
+                text-align: center;
+
+                font-size: $step-2;
+            }
+        }
+
+        .ourfight {
+            padding-top: 137px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            height: 100vh;
+
+            .sectionHeader {
+                grid-column: 1 / 2;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+
+                h3 {
+                    writing-mode: vertical-rl;
+                    transform: rotate(180deg); // pour que le texte aille de bas en haut si besoin
+                    letter-spacing: 0.5em;
+                }
+            }
+
+            .explaination {
+                grid-column: 3 / 6;
+            }
+        }
+
+        .theydont{
+            display: flex;
+            flex-direction: column;
+
+            &__header {
+                width: 100%;
+                margin-bottom: 62px;
+            }
+
+            &__explaination {
+                padding: 0px 31px 0px 31px;
+            }
+
+           &__div {
+                display: grid;
+                grid-template-rows: repeat(2, auto);
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 31px;
+                column-gap: 31px;
+                align-items: center;
+
+                h4 {
+                    margin-bottom: 0px;
+                    width: 100%;
+
+                    grid-row: 1 / 2;
+                    grid-column: 1 / 4;
+                }
+
+                img {
+                    grid-row: 2 / 3;
+                }
+        }
+        }
+
+        .yourrole {
+            padding-top: 137px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+
+            height: 100vh;
+
+            .sectionHeader {
+                grid-column: 1 / 2;
+                height: 100%;
+                width: 100%;
+                padding: 0;
+
+                h3 { //ChatGPT
+                    writing-mode: vertical-rl;
+                    transform: rotate(180deg); 
+                    letter-spacing: 0.5em;
+                }
+            }
+
+            .explaination {
+                grid-column: 3 / 6;
+            }
+
+            &__section {
+                height: 100vh;
+                grid-template-columns: repeat(5, 1fr);
+
+                .sectionHeader {
+                    grid-column: 1 / 3;
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+
+        .rejected, .received {
+            padding: 0px 31px 31px 31px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 31px;
+
+            font-size: $step-2;
+            text-align: center;
+        }
+    }
+}
+
+/*Code pour l'aggenda (à voir) -> Google Gemini
+.agenda__explaination {
+    padding: 0px 31px 31px 31px; // Correspond aux autres sections .explaination
+}
+
+.agenda__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px; // Espacement cohérent
+    color: white;
+
+    button {
+        background-color: $c-alt; // Utilisation d'une variable existante pour la couleur de fond
+        color: black;
+        border: none;
+        padding: 10px 15px;
+        font-family: "Antonio", sans-serif; // Cohérence de la police
+        font-size: $step-0; // Utilisation des variables de taille de police
+        cursor: pointer;
+        border-radius: 4px; // Optionnel: pour adoucir les angles
+
+        &:hover {
+            background-color: darken($c-alt, 10%); // Assombrir au survol
+        }
+    }
+
+    h4 {
+        font-family: "Black Ops One", system-ui; // Cohérence de la police
+        font-size: $step-1; // Utilisation des variables de taille de police
+        margin: 0;
+    }
+}
+
+.agenda__grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); // 5 colonnes pour la grille
+    gap: 8px; // Espacement entre les cellules de jour
+    width: 100%;
+}
+
+.agenda__day-cell {
+    background-color: #333; // Fond sombre pour les cellules de jour
+    color: white; // Texte blanc pour les cellules de jour
+    padding: 15px 5px; // Ajustement du padding pour le contenu
+    text-align: center;
+    font-size: $step-0; // Utilisation des variables de taille de police
+    font-family: "Antonio", sans-serif; // Cohérence de la police
+    min-height: 70px; // Hauteur minimale pour les cellules
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444; // Bordure légère
+    border-radius: 4px; // Optionnel: pour adoucir les angles
+
+    &.empty { // Pour les cellules vides (avant le début/après la fin du mois)
+        background-color: #1a1a1a; // Fond plus sombre
+        visibility: hidden; // Rend les cellules vides invisibles mais conserve l'espace
+    }
+
+    &.current-day { // Style pour le jour actuel
+        background-color: white !important; // Fond blanc
+        color: black !important; // Texte noir
+        font-weight: bold; // Texte en gras
+        border: 1px solid $c-alt; // Optionnel: bordure distinctive
+    }
+}
+
+// Ajustements responsives (optionnel, à adapter si besoin)
+@media (max-width: 768px) {
+    .agenda__day-cell {
+        font-size: $step--1; //
+        padding: 10px 3px;
+        min-height: 60px;
+    }
+    .agenda__controls {
+        h4 {
+            font-size: $step-0; //
+        }
+        button {
+            font-size: $step--1; //
+            padding: 8px 10px;
+        }
+    }
+}
+*/

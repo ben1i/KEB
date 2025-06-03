@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JOIN US - KEB</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="description" content="">
+  <!-- Meta Partage -->
+  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/app.css">
+
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+
+    <header class="hidden">
+
+        <div class="header__quit">
+            <img src="assets/images/quit-button.svg" alt="Quit burger menu">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">WHO WE ARE</a></li>
+                <li><a href="ourfight.html">OUR FIGHT</a></li>
+                <li><a href="yourjob.html">YOUR ROLE</a></li>
+                <li><a href="agenda.html">AGENDA</a></li>
+                <li class="active"><a href="#">JOIN US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="burger">
+            <img src="./assets/images/burger-menu.svg" alt="Burger Menu button">
+        </div>
+
+        <section class="keb__section joinus">
+            <div class="sectionHeader form__header">
+                <h3 class="subtitle form__title">JOIN US</h3>
+            </div>
+
+            <form action="post" class="keb__form">
+
+                <div class="formInput form__name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="John" required>
+                </div>
+                
+                <div class="formInput form__surname">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Doe" required>
+                </div>
+                
+                <div class="formInput form__email">
+                    <label for="email">E-mail adress</label>
+                    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                </div>
+                
+                <div class="formInput form__birthday">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+                
+                <div class="formInput form__gender">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="select" selected>Select an option</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="nb">Non-Binary</option>
+                        <option value="none">Prefer not to say</option>
+                    </select>
+                </div>
+
+                
+                <div class="formInput form__role">
+                    <label for="role">Role wanted</label>
+                    <select name="role" id="role" required>
+                        <option value="select">Select an option</option>
+                        <option value="manifesting">Manifester</option>
+                        <option value="observing">Observing</option>
+                        <option value="hacking">Hacker</option>
+                        <option value="infiltrating">Infiltrator</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="form__submit">Submit</button>
+
+            </form>
+
+        </section>
+
+        <section class="keb__section rejected hidden">
+            <span>Sorry, you must be at least 18 years old to join KEB</span>
+            <span>Your application has been rejected</span>
+        </section>
+
+        <section class="keb__section received hidden">
+            <span>Your application has been received</span>
+            <span>A summary e-amil has been sent to you</span>
+        </section>
+    
+    </main>
+    
+</body>
+</html>
