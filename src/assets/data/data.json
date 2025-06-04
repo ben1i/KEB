@@ -2,54 +2,90 @@
     {
         "title": "SPY",
         "img" : [
-            "../assets/images/fight/spy/spy1.jpg",
-            "../assets/images/fight/spy/spy2.jpg",
-            "../assets/images/fight/spy/spy3.jpg"
+            "./assets/images/fight/spy/spy1.jpg",
+            "./assets/images/fight/spy/spy2.jpg",
+            "./assets/images/fight/spy/spy3.jpg"
+        ],
+
+        "srcset" :[
+            "./assets/images/@2x/fight/spy/spy1@2x.jpg 2x",
+            "./assets/images/@2x/fight/spy/spy2@2x.jpg 2x",
+            "./assets/images/@2x/fight/spy/spy3@2x.jpg 2x"
         ]
     },
 
     {
         "title": "STEAL",
         "img" : [
-            "../assets/images/fight/steal/steal1.jpg",
-            "../assets/images/fight/steal/steal2.jpg",
-            "../assets/images/fight/steal/steal3.jpg"
+            "./assets/images/fight/steal/steal1.jpg",
+            "./assets/images/fight/steal/steal2.jpg",
+            "./assets/images/fight/steal/steal3.jpg"
+        ],
+
+        "srcset" :[
+            "./assets/images/@2x/fight/steal/steal1@2x.jpg 2x",
+            "./assets/images/@2x/fight/steal/steal2@2x.jpg 2x",
+            "./assets/images/@2x/fight/steal/steal3@2x.jpg 2x"
         ]
     },
 
     {
         "title": "SABOTAGE",
         "img" : [
-            "../assets/images/fight/sabotage/sabotage1.jpg",
-            "../assets/images/fight/sabotage/sabotage2.jpg",
-            "../assets/images/fight/sabotage/sabotage3.jpg"
+            "./assets/images/fight/sabotage/sabotage1.jpg",
+            "./assets/images/fight/sabotage/sabotage2.jpg",
+            "./assets/images/fight/sabotage/sabotage3.jpg"
+        ],
+
+        "srcset" :[
+            "./assets/images/@2x/fight/sabotage/sabotage1@2x.jpg 2x",
+            "./assets/images/@2x/fight/sabotage/sabotage2@2x.jpg 2x",
+            "./assets/images/@2x/fight/sabotage/sabotage3@2x.jpg 2x"
         ]
     },
 
     {
         "title": "SPREAD",
         "img" : [
-            "../assets/images/fight/spread/spread1.jpg",
-            "../assets/images/fight/spread/spread2.jpg",
-            "../assets/images/fight/spread/spread3.jpg"
+            "./assets/images/fight/spread/spread1.jpg",
+            "./assets/images/fight/spread/spread2.jpg",
+            "./assets/images/fight/spread/spread3.jpg"
+        ],
+
+        "srcset" :[
+            "./assets/images/@2x/fight/spread/spread1@2x.jpg 2x",
+            "./assets/images/@2x/fight/spread/spread2@2x.jpg 2x",
+            "./assets/images/@2x/fight/spread/spread3@2x.jpg 2x"
         ]
     },
 
     {
         "title": "HACK",
         "img" : [
-            "../assets/images/fight/hack/hack1.jpg",
-            "../assets/images/fight/hack/hack2.jpg",
-            "../assets/images/fight/hack/hack3.jpg"
+            "./assets/images/fight/hack/hack1.jpg",
+            "./assets/images/fight/hack/hack2.jpg",
+            "./assets/images/fight/hack/hack3.jpg"
+        ],
+
+        "srcset" :[
+            "./assets/images/@2x/fight/hack/hack1@2x.jpg 2x",
+            "./assets/images/@2x/fight/hack/hack2@2x.jpg 2x",
+            "./assets/images/@2x/fight/hack/hack3@2x.jpg 2x"
         ]
     },
 
     {
         "title": "KILL",
         "img" : [
-            "../assets/images/fight/kill/kill1.jpg",
-            "../assets/images/fight/kill/kill2.jpg",
-            "../assets/images/fight/kill/kill3.jpg"
+            "./assets/images/fight/kill/kill1.jpg",
+            "./assets/images/fight/kill/kill2.jpg",
+            "./assets/images/fight/kill/kill3.jpg"
+        ],
+
+        "srcset" :[
+            "./assets/images/@2x/fight/kill/kill1@2x.jpg 2x",
+            "./assets/images/@2x/fight/kill/kill2@2x.jpg 2x",
+            "./assets/images/@2x/fight/kill/kill3@2x.jpg 2x"
         ]
     }
 ]

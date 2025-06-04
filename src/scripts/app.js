@@ -58,7 +58,7 @@ quitButton.addEventListener('click', function() {
 const fightData = document.querySelector('.theydont__explaination');
 
 if (window.location.pathname.endsWith("fight.html")) { //ChatGPT
-    fetch('../assets/data/data.json')
+    fetch('./assets/data/data.json')
         .then(function(data) {
             return data.json();
         })
@@ -78,6 +78,7 @@ if (window.location.pathname.endsWith("fight.html")) { //ChatGPT
                     let fightImage = document.createElement('img');
                     fightImage.src = item.img[i-1];
                     fightImage.alt = item.title + i;
+                    fightImage.srcset = item.srcset[i-1];
                     fightDiv.appendChild(fightImage);
                 }
 

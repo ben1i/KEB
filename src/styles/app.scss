@@ -276,6 +276,21 @@ main {
         font-size: $step-2;
         text-align: center;
     }
+
+    .form {
+        &__submit {
+            cursor: pointer;
+
+            &:hover {
+                background-color: #FFFFFF;;
+            }
+
+            &:active {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+        }
+    }
 }
 
 
@@ -324,6 +339,11 @@ main {
 
         .joinus {
             padding-top: 137px;
+
+            display: flex !important;
+            flex-direction: column;
+
+            gap: 62px;
         }
 
         .keb {
@@ -522,6 +542,8 @@ main {
             &__section {
                 height: 100vh;
                 grid-template-columns: repeat(5, 1fr);
+
+                margin-bottom: 62px;
 
                 .sectionHeader {
                     grid-column: 1 / 3;
