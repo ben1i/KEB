@@ -126,9 +126,6 @@ if (window.location.pathname.endsWith("joinus.html")) {
     if (answer === 'rejected') {
         formSection.classList.add('hidden');
 
-        let rejectionMessage = document.createElement('span');
-        rejectionMessage.textContent = "Sorry, you must be at least 18 years old to join. Your application has been rejected.";
-        rejected.appendChild(rejectionMessage);
         rejected.classList.remove('hidden');
         reception.classList.add('hidden');
     } else if (answer === 'approved') {
@@ -153,7 +150,7 @@ if (window.location.pathname.endsWith("joinus.html")) {
 
             rejected.classList.remove('hidden');
             reception.classList.add('hidden');
-        } else if (role != "select" && gender != "select") {
+        } else if (role != "" && gender != "") {
             localStorage.setItem('approval', 'approved');
 
             formSection.classList.add('hidden');

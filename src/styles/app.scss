@@ -116,6 +116,7 @@ main {
         position: fixed;
         margin-top: 31px;
         margin-left: 31px;
+        z-index: 5;
 
         background-color: #000000;
         border: #000000 5px solid;
@@ -301,7 +302,7 @@ main {
 
         nav {
             ul {
-                grid-template-columns: repeat(5, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: none;
                 row-gap: 0;
                 column-gap: 31px;
@@ -337,18 +338,8 @@ main {
             padding: 75px 31px 31px 31px;
         }
 
-        .joinus {
-            padding-top: 137px;
-
-            display: flex !important;
-            flex-direction: column;
-
-            gap: 62px;
-        }
-
         .keb {
             &__form {
-
                 display: grid;
                 grid-template-columns: repeat(5, 1fr);
                 grid-template-rows: repeat(3, auto);
@@ -362,6 +353,15 @@ main {
                 column-gap: 31px;
 
                 min-height: fit-content;
+
+                &.joinus {
+                    padding-top: 137px;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    gap: 62px;
+                }
             }
         }
 
@@ -403,7 +403,6 @@ main {
         }
 
         .sectionHeader {
-            display: flex;
             flex-direction: column;
 
             margin-bottom: 0;
@@ -445,14 +444,6 @@ main {
             grid-column: 3 / 6;
 
             align-self: center;
-
-            span {
-                width: 100%;
-                display: block;
-                text-align: center;
-
-                font-size: $step-2;
-            }
         }
 
         .ourfight {
@@ -555,16 +546,9 @@ main {
         }
 
         .rejected, .received {
-            padding: 0px 31px 31px 31px;
+            height: 100vh;
 
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 31px;
-
-            font-size: $step-2;
-            text-align: center;
         }
     }
 }
