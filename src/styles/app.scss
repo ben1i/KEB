@@ -531,7 +531,7 @@ main {
             }
 
             &__section {
-                height: 100vh;
+                height: fit-content;
                 grid-template-columns: repeat(5, 1fr);
 
                 margin-bottom: 62px;
@@ -540,7 +540,11 @@ main {
                     grid-column: 1 / 3;
                     height: 100%;
                     width: 100%;
-                    padding: 0;
+                    padding: 0px 31px 31px 31px;
+
+                    h3 {
+                        margin-bottom: 31px;
+                    }
                 }
             }
         }
